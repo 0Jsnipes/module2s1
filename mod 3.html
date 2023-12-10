@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        </style>
+</head>
+<body>
+    
+</body>
+<script>
+ //   function startProcess(){
+   /*    console.log("process started") 
+        startProcess()
+startProcess()
+startProcess()
+*/
+///
+
+const startProcess=function() {
+    console.log("process started")
+}
+startProcess()  
+const processSpeed= 12235 //declaring variable outside function
+    
+const printProcessTimeInSeconds = function () {
+//syntax for function expression
+const processSpeedInSeconds = processSpeed / 1000
+console.log("Time to complete process " + processSpeedInSeconds)
+if (processSpeedInSeconds > 2){
+    const message = ("Slow Process Detected!")
+    console.log(message)
+}
+}
+printProcessTimeInSeconds()
+
+let totalSpeciesFound = 155 
+
+function addOneSpecies() {
+    console.log("Another species has been found")
+    totalSpeciesFound++
+    return totalSpeciesFound
+}
+const newTotalSpeciesValue = addOneSpecies()
+
+console.log(newTotalSpeciesValue)
+
+let orangeMackerelPopulation = 34
+
+function subtractOneMackerel(){
+    orangeMackerelPopulation--
+    return orangeMackerelPopulation
+}
+subtractOneMackerel()
+subtractOneMackerel()
+subtractOneMackerel()
+subtractOneMackerel()
+subtractOneMackerel()
+const currentMackerelPopulation = subtractOneMackerel()
+subtractOneMackerel()
+console.log(currentMackerelPopulation)
+console.log(orangeMackerelPopulation)
+
+zone1Population = 34 
+zone2Population = 15
+function onSpeciesPopulationChange (species, zone1Count, zone2Count){
+ //writing function to accept 3 agreements
+ zone1Population = zone1Count
+ zone2Population = zone2Count
+ console.log(species +" population - Zone1: " + zone1Population + ", Zone2: " + zone2Population)   
+}
+onSpeciesPopulationChange("Bottlenose Dolphin", 21, 27)
+
+//let speciesName = "Spanish Shawl Nudibranch"
+
+//console.log(speciesName[0])//prints "s" the number associated will print the letter in sequence of the word 0,1,2,3 etc.
+
+/*let speciesName = "sea Hare"
+speciesName[1]//will print "e"
+let anotherSpeciesName = "Orca"
+anotherSpeciesName[2]//will print "c"
+*/
+let entryOneCategory = 'name'
+console.log(entryOneCategory [entryOneCategory.length -1])//will check last letter value "e"
+let entryTwoCategory = 'names'
+console.log(entryTwoCategory [entryTwoCategory.length - 1])//will print "s"
+
+const speciesName = 'Garibaldi'
+const weight = '2lbs'
+const length = '15in'
+const speciesFact = `The ${speciesName} weighs approximately ${weight} and has a length of ${length}.`
+console.log(speciesFact)
+//console.log(entryThreeCatergory [entryThreeCatergory.length - 1])
+//let favNum= 5;
+//function myFavoriteNumber(num) {
+  //  console.log(num + " is my favorite number")
+//}
+//myFavoriteNumber(favNum)
+
+
+    </script>
+</html>

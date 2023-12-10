@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>GP functions</title>
+</head>
+<body>
+    <h1>Functions Guided Project</h1>
+    <script>
+        console.log("hello world!")
+
+        let car = "Corolla"
+        function printCar(){
+            console.log(car)
+        }
+        printCar()
+
+        function fail(){
+            let plane= "Spitfire"
+        }
+        //console.log(plane)
+
+        let boat = "Queen Mary"
+        function printBoat(){
+            let boat = "Titanic"
+            console.log(boat)
+        }
+        printBoat()
+
+        function validatePostalCode(code){
+            if(code > 0 && code <1000) {
+            return "The code is OK"
+        } 
+        return "The is a problem with the code"
+    }
+console.log(validatePostalCode(20))
+
+let returnValue = validatePostalCode(-6)
+console.log(returnValue)
+
+function sum(a, b) {
+    return a + b
+}
+console.log(sum(34, 56))
+
+
+function report(points, level){
+let status
+if (points > 90){
+    status = "doing great"
+} else if (points > 50 ){
+    status = 'still kicking'}
+    else{
+        status = 'in bad shape'
+    }
+    let str = `i am on $(level) and im $(status)`
+    return str
+}
+
+report(5, 7)
+    </script>
+</body>
+</html>
